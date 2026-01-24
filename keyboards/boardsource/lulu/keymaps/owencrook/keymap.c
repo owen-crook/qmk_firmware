@@ -98,9 +98,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | ESC  |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |      |
+ * | Tab  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |LCTRL | PREV | PLAY | NEXT |      |      |-------.    ,-------|      | Left | Down |  Up  |Right |      |
+ * |LCTRL | PREV | PLAY | NEXT |      |      |-------.    ,-------|      | Left | Down |  Up  |Right |  |   |
  * |------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
  * |LShift| MUTE | VOL- | VOL+ |      |      |-------|    |-------|   +  |   -  |   =  |   *  |   /  |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -111,8 +111,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE] = LAYOUT(
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    XXXXXXX,
-  _______, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX,
+  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,
+  _______, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PIPE,
   _______, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, _______, _______, KC_PLUS, KC_MINS, KC_EQL,  KC_ASTR, KC_PSLS, XXXXXXX,
                              _______, _______, _______, _______, _______, _______, _______, _______
 ),
